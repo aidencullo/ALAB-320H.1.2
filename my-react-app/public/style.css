@@ -1,0 +1,89 @@
+/* Apply border to the left side of the HTML element */
+html {
+    border-left: 5px solid lightgray;
+}
+
+/* Ensure body takes at least the full viewport height */
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Add padding to header, main, and footer */
+header, main, footer {
+    padding: 1rem 2rem;
+}
+
+/* Style for h1 and h2 */
+h1 {
+    color: tomato;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Style images */
+img {
+    width: 100%;
+}
+
+/* Style navigation */
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Main navigation styles */
+nav[aria-label="Main Navigation"] ul {
+    justify-content: space-between;
+}
+
+nav[aria-label="Main Navigation"] a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+nav[aria-label="Footer Navigation"] a {
+    color: tomato;
+}
+
+/* Style article elements */
+article {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2rem;
+}
+
+/* Style continue links */
+a.continue {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: tomato;
+}
+
+/* Style drop caps */
+article p::first-letter {
+    color: lightgray;
+    font-size: 2em;
+    float: left;
+    margin-right: 0.1em;
+}
+
+/* Style copyright */
+footer p {
+    color: lightgray;
+}
